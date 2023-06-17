@@ -4,6 +4,34 @@ const session = require('express-session')
 const customer_routes = require('./router/auth_users.js').authenticated;
 const genl_routes = require('./router/general.js').general;
 
+
+let users = []
+//Function to check if the user exists
+const doesExist = (username)=>{
+  let userswithsamename = users.filter((user)=>{
+    return user.username === username
+  });
+  if(userswithsamename.length > 0){
+    return true;
+  } else {
+    return false;
+  }
+}
+//Function to check if the user is authenticated
+const authenticatedUser = (username,password)=>{
+  let validusers = users.filter((user)=>{
+    return (user.username === username && user.password === password)
+  });
+  if(validusers.length > 0){
+    return true;
+  } else {
+    return false;
+  }
+}
+
+
+
+
 const app = express();
 
 app.use(express.json());
@@ -27,6 +55,9 @@ if(req.session.authorization) { //get the authorization object stored in the ses
      return res.status(403).json({message: "User not logged in"})
  }
 });
+
+
+
  
 const PORT =5000;
 
