@@ -14,7 +14,8 @@ general.js - This contains the skeletal implementations for the routes which a g
 auth_users.js - This contains the skeletal implementations for the routes which an authorized user can access.
 
 ## Getting the list of books available in shop using JSON.stringify
-In general.js, the following heading has the code for getting the list of books available in shop using the JSON.stringify method: "public_users.get('/',function (req, res) {."
+In general.js, the following heading has the code for getting the list of books available in shop using the JSON.stringify method: 
+"public_users.get('/',function (req, res) {."
 
 ## Getting the book details based on ISBN
 In general.js, the following heading contains the code for getting the book details based on ISBN. This was tested using postmanm: "public_users.get('/isbn/:isbn',function (req, res) {"
