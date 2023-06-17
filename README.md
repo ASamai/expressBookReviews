@@ -18,3 +18,11 @@ In general.js, the following heading has the code for getting the list of books 
 
 ## Getting the book details based on ISBN
 In general.js, the following heading contains the code for getting the book details based on ISBN. This was tested using postmanm: "public_users.get('/isbn/:isbn',function (req, res) {"
+
+## Getting the book details based on the Author
+In general.js, the following heading contains the code for getting the book details based on the author:
+"public_users.get('/author/:author',function (req, res) {"
+
+## Getting the Book Reviews
+In general.js, the following heading contains the code for geetting the book reviews:
+"public_users.get('/review/:isbn',function (req, res) {"
