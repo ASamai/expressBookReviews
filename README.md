@@ -4,7 +4,7 @@ This application is a book review system developed using a code template that I 
 
 In this final project, I have built a server-side online book review application and integrated it with a secure REST API server which will use authentication at session level using JWT.The application was tested using Promises callbacks or Async-Await functions.
 
-### Understanding the user routes
+## Understanding the user routes
 Navigate to the router directory having the below 3 files:
 
 booksdb.js - This contains the the preloaded book information for this application.
@@ -15,3 +15,6 @@ auth_users.js - This contains the skeletal implementations for the routes which 
 
 ## Getting the list of books available in shop using JSON.stringify
 In general.js, the following heading has the code for getting the list of books available in shop using the JSON.stringify method: "public_users.get('/',function (req, res) {."
+
+## Getting the book details based on ISBN
+In general.js, the following heading contains the code for getting the book details based on ISBN. This was tested using postmanm: "public_users.get('/isbn/:isbn',function (req, res) {"
