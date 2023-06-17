@@ -1,4 +1,4 @@
-**# BOOK REVIEW BACKEND APPLICATION USING NODE.JS AND EXPRESS**
+# **BOOK REVIEW BACKEND APPLICATION USING NODE.JS AND EXPRESS**
 
 This application is a book review system developed using a code template that I forked from the IBM skills network repository during my IBM Full Stack Software developer certification. The name of the course that this final project was made for is "Backend application development with Node.JS and Express".
 
