@@ -12,3 +12,6 @@ booksdb.js - This contains the the preloaded book information for this applicati
 general.js - This contains the skeletal implementations for the routes which a general user can access.
 
 auth_users.js - This contains the skeletal implementations for the routes which an authorized user can access.
+
+## Getting the list of books available in shop using JSON.stringify
+In general.js, the following heading has the code for getting the list of books available in shop using the JSON.stringify method: "public_users.get('/',function (req, res) {."
