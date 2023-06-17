@@ -37,3 +37,7 @@ The code will validate and sign in a customer based on the username and password
 
 ## Adding or modifying book reviews
 You have to give a review as a request query & it must get posted with the username (stored in the session) posted. If the same user posts a different review on the same ISBN, it should modify the existing review. If another user logs in and posts a review on the same ISBN, it will get added as a different review under the same ISBN.
+
+## Deleting a book review:
+The code for deleting book reviews is found under the following heading:
+"regd_users.delete("/auth/review/:isbn", (req, res) => {"
