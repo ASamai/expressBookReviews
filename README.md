@@ -28,3 +28,12 @@ In general.js, the following heading contains the code for getting the book deta
 In general.js, the following heading contains the code for geetting the book reviews:
 
 "public_users.get('/review/:isbn',function (req, res) {"
+
+## Registering users
+Code has been entered to register new users
+
+## Signing in users
+The code will validate and sign in a customer based on the username and password. It will also save the user credentials for the session as a JWT.
+
+## Adding or modifying book reviews
+You have to give a review as a request query & it must get posted with the username (stored in the session) posted. If the same user posts a different review on the same ISBN, it should modify the existing review. If another user logs in and posts a review on the same ISBN, it will get added as a different review under the same ISBN.
